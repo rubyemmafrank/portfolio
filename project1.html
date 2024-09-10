@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Project 1: Introduction to 3D Printing</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Ensure Bootstrap CSS is linked -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #B90E0A; 
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #343a40; 
+            padding: 0.5rem 1rem; 
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%;
+        }
+        .navbar-brand {
+            color: #fff; 
+            margin-right: auto; 
+        }
+        .navbar-nav {
+            margin-left: auto; 
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            margin-right: 1rem; 
+        }
+        .navbar-nav .nav-link:hover {
+            color: #B90E0A; 
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: 80px auto 20px; 
+            max-width: 800px;
+        }
+        .text-center h1 {
+            color: #B90E0A; 
+            font-weight: bold;
+            font-family: 'Times New Roman', serif;
+        }
+        .img-fluid {
+            max-width: 100%;  
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Fixed-top class to make the navbar fixed -->
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">Ruby's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+                            <li><a class="dropdown-item" href="#">Future Project</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="container">
+        <h1 class="mt-5">Project 1: Introduction to 3D Printing 9/10</h1>
+
+        <P style="font-size: 12;"> Part 1: Nametag
+        
+        <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8855.jpg" alt="Nametag" class="img-fluid">
+        <p style="font-style: italic;">To Be Frank With Ruby Frank, my fictitious podcast</p>
+
+        <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8856.jpg" alt="Nametag_2" class="img-fluid">
+        <p style="font-style: italic;">Detail issues</p>
+
+        <p>We began by setting up the PrusaSlicer with the corresponding PrusaMini machines and PLA filament. I edited the name to read “To Be Frank With Ruby Frank” with a line break in between. I shifted the text, making sure it stayed within the tag itself. Finally, I changed the font to Times New Roman. This font, I would come to find out, proved difficult for the scale of the nametag, with the serif feet straining the PrusaMini’s ability to print in detail. After slicing, logging and transferring it through USB, my first attempt failed. There was an issue with the filament when printing the text color, it did not complete at all as it never fully grasped nor loaded the filament. After adjusting the filament, my second attempt worked well, seldom the small details on the text itself. Finally, I coated my nametag in clear nail polish to best preserve the detailed text. </p>
+
+        <P style="font-size: 12;"> Part 2: Second Print
+
+         <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8942.jpg" alt="Nametag_2" class="img-fluid">
+        <p style="font-style: italic;">Overhang test</p>
+
+         <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8953.jpg" alt="Nametag_2" class="img-fluid">
+        <p style="font-style: italic;">Issue began ~60</p>
+
+        <p> The PrusaMini was able to print the overhang challenge up until the 60 mark, when on the underside it becomes noticeable that the rows of filament had a difficult time sticking to each other. There were no supports printed and the direction of the print (horizontal with the numbers) made it so it was printing on top of air, not cooling in time to create a seamless structural underside. It is most visible at the 80 mark, where the extrusions are clearly separated and visible. Overall, the print is mostly complete, but if I wanted to further test the printer, I could stretch the model in PrusaSlicer to make the overhang more extreme. If the print went vertically with the numbers instead, it likely would have had time to cool because those rows would have been shorter and more closely aligned. This tells me that the 3D printer needs to print overhang in smaller increments in order to give it structural integrity. When designing 3D models, overhang and overall printing practicality must be taken into consideration. The orientation may sometimes helps create a structurally sound print as well. The 3MF file is a more efficient version of the STL file, including all the printing instructions necessary but in a simpler format.
+
+
+
+    </div>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

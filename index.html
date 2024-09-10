@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ruby's Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #B90E0A;
+            font-family: 'Times New Roman', serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .img-fluid {
+            max-width: 100%;  
+            height: auto; 
+        }
+        .text-center h1 {
+            color: #B90E0A;
+            font-weight: bold;
+            font-family: 'Times New Roman', serif;
+        }
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .caption {
+            margin-top: 8px;
+            font-style: italic;
+            color: black;
+            display: inline-block;
+            padding: 8px;
+            background-color: white;
+            margin-bottom: 8px;
+        }
+        .title-box {
+            background-color: white;
+            padding: 10px;
+            margin: 20px auto;  
+            text-align: center;
+            max-width: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ruby's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+                            <li><a class="dropdown-item" href="#">Future Project</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="container">
+        <div class="title-box">
+            <h1 class="mt-5">Ruby Frank</h1>
+            <p class="lead">ENGR 11A Portfolio</p>
+            <p>Brandeis University</p>
+        </div>
+
+        <!-- Image with caption -->
+        <div class="img-container">
+            <a href="project1.html">
+                <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8855.jpg" alt="Project 1; Part 1: Nametag" class="img-fluid">
+                <figcaption class="caption">Project 1; Part 1: Nametag (click here)</figcaption>
+            </a>
+            
+            <a href="project1.html">
+                <img src="file:///Users/rubyfrank/Desktop/Brandeis/Design%20M/IMG_8953.jpg" alt="Project 1; Part 2: Torture Test" class="img-fluid">
+                <figcaption class="caption">Project 1; Part 2: Torture Test (click here)</figcaption>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
